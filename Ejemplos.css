@@ -1,0 +1,376 @@
+* {
+    font-family: 'Asap', sans-serif;
+    font-weight: 100;
+    margin: 0%;
+}
+
+body{
+    background-color:rgba(168,21,0,255);
+}
+
+ul{
+    list-style-type: none;
+}
+
+.nav_responsive_ul{
+    display: none;
+}
+
+header{
+    position: fixed;
+    display: static;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav {
+    background-color: white;
+}
+.nav_li{
+    display: inline-block;
+    padding: 12px 50px 12px 50px;
+    transition: all 100ms;
+}
+
+.nav_li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav_li:hover > a {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.nav_li:hover > i {
+    color: darkblue;
+}
+
+.nav_li i {
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.nav_responsive_button_container{
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    background-color: white;
+    margin: -64px 0px 0px -37px;
+    z-index: 100;
+}
+
+.nav_responsive_button{
+    padding: 6px 70px 6px 10px;
+    margin-left: -50px;
+    text-align: right;
+    width: 100%;
+}
+
+.Everything{
+    position: absolute;
+    display: flex;
+    background: white;
+    border-radius: 10px 10px 0px 0px;
+    margin: 75px 200px 500px 200px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.Left_Part{
+    background-color: grey;
+    height: 100%;
+    width: 150%;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.Right_Part{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.fotito{
+    width: 50%;
+}
+
+.párrafo{
+    text-align: left;
+    padding: 50px;
+    color: white;
+}
+
+.textito{
+    display: flex;
+    margin: 0px 0px 20px 0px;
+
+}
+
+.Title{
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+img{
+    display:block;
+    margin:auto;
+}
+
+a {
+    height: 200px;
+    width: 200px;
+}
+
+.Sec_Title{
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    margin: 5% 50% 2.5% 50%;
+
+}
+    
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-content: baseline;
+}
+    
+.flex-item{
+    margin: 40px;
+    height: 200px;
+    flex-basis: 200px;
+    text-align: center;
+    background-color: #ffffff;
+    transition: all 250ms;
+}
+    
+.texto{
+    margin: 18px;
+    color: white;
+}
+    
+.flex-item:hover {
+    height: 275px;
+    flex-basis: 220px;
+    box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+    color: black;
+    background-color: white;
+
+}
+.flex-item:hover .texto {
+    color: black;
+}
+
+@media only screen and (max-width: 1500px) {
+
+    .Everything{
+        margin: 75px 100px 300px 100px;
+    }
+    
+    .flex-item{
+        margin: 40px;
+        height: 150px;
+        flex-basis: 150px;
+    }
+        
+    .texto{
+        margin: 14px;
+        color: white;
+    }
+        
+    .flex-item:hover {
+        height: 206.25px;
+        flex-basis: 165px;
+        box-shadow: 0 3px 6px 0 grey, 0 4.5px 15px 0 grey;
+    
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav_ul{
+        display: none;
+    }
+
+    .nav{
+        height: 37px;
+        width: 100%;
+    }
+
+    .nav_responsive_ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin: 37px 0px 0px -25px;
+        padding-top: 27px;
+        height: 27px;
+    }
+
+    .nav_li_container{
+        position: relative;
+        float: right;
+        top: -1000px;
+        height: 600%;
+        background-color: darkred;
+        margin: 0px 0px 0px -15px;
+        transition: all 250ms;
+        z-index: 10;
+        width: 60%;
+        padding-top: 27px;
+    }
+
+    .responsive_li{
+        width: 100%;
+        padding: 9px 20px;
+    }
+
+    .responsive_li i {
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+        color: white;
+    }
+
+    .responsive_li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav_responsive_ul:hover > .nav_li_container{
+        top: -27px;
+    }
+
+    .Everything{
+        display: block;
+        border-radius: 0px;
+        margin: 15px 20px 0px 20px;
+    }
+    
+    .Left_Part{
+        border-radius: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .Right_Part{
+        border-radius: 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .párrafo{
+        font-size: small;
+        padding: 20px;
+    }
+        
+    .flex-item{
+        margin: 40px;
+        height: 75px;
+        flex-basis: 75px;
+    }
+
+    .Sec_Title{
+        font-size: 20px;
+        margin: 10% 50% 1% 50%;
+    }
+        
+    .texto{
+        margin: 8px;
+        font-size: small;
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .nav_ul{
+        display: none;
+    }
+
+    .nav{
+        height: 37px;
+        width: 100%;
+    }
+
+    .nav_responsive_ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin: 37px 0px 0px -25px;
+        padding-top: 27px;
+        height: 27px;
+    }
+
+    .nav_li_container{
+        position: relative;
+        float: right;
+        top: -1000px;
+        height: 600%;
+        background-color: darkred;
+        margin: 0px 0px 0px -15px;
+        transition: all 250ms;
+        z-index: 10;
+        width: 60%;
+        padding-top: 27px;
+    }
+
+    .responsive_li{
+        width: 100%;
+        padding: 9px 20px;
+    }
+
+    .responsive_li i {
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+        color: white;
+    }
+
+    .responsive_li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav_responsive_ul:hover > .nav_li_container{
+        top: -27px;
+    }
+
+    .Everything{
+        display: block;
+        border-radius: 0px;
+        margin: 15px 20px 0px 20px;
+    }
+    
+    .Left_Part{
+        border-radius: 0px;
+    }
+    
+    .Right_Part{
+        border-radius: 0px;
+    }
+        
+    .flex-item{
+        margin: 30px;
+        height: 50px;
+        flex-basis: 50px;
+    }
+
+    .Sec_Title{
+        font-size: 15px;
+        margin: 8% 40% 1% 40%;
+    }
+        
+    .texto{
+        margin: 6px;
+        font-size: small;
+        color: black;
+    }
+}

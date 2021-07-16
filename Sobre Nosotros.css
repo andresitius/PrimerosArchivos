@@ -1,0 +1,265 @@
+* {
+    font-family: 'Asap', sans-serif;
+    font-weight: 100;
+    margin: 0%;
+    font-size: large;
+}
+
+body{
+    background-color:rgba(168,21,0,255);
+}
+
+.nav_responsive_ul{
+    display: none;
+}
+
+header{
+    position: fixed;
+    display: static;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav {
+    background-color: white;
+}
+.nav_li{
+    display: inline-block;
+    padding: 12px 50px 12px 50px;
+    transition: all 100ms;
+}
+
+.nav_li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav_li:hover > a {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.nav_li:hover > i {
+    color: darkblue;
+}
+
+.nav_li i {
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.nav_responsive_button_container{
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    background-color: white;
+    margin: -64px 0px 0px -37px;
+    z-index: 100;
+}
+
+.nav_responsive_button{
+    padding: 6px 70px 6px 10px;
+    margin-left: -50px;
+    text-align: right;
+    width: 100%;
+}
+
+.Everything{
+    position: absolute;
+    display: flex;
+    background: white;
+    border-radius: 10px 10px 0px 0px;
+    margin: 75px 200px 500px 200px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.Center_Part{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.Text-Parts{
+    text-align: left;
+    padding: 50px;
+    color: black;
+}
+
+.Sub_Titles{
+    padding: 0px 0px 20px 0px;
+    color: black;
+    font-size: x-large;
+
+}
+
+.textito{
+    display: flex;
+    margin: 0px 0px 20px 0px;
+
+}
+
+.Title{
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+.icons{
+    height: 40px;
+    width: 40px;
+    margin: -15px 0px 0px 0px;
+}
+
+.textito a {
+    color: black;
+    text-decoration: none;
+}
+
+.textito:hover > a {
+    color: darkblue;
+    font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+
+    .Everything{
+        margin: 75px 100px 300px 100px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav_ul{
+        display: none;
+    }
+
+    .nav{
+        height: 37px;
+        width: 100%;
+    }
+
+    .nav_responsive_ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin: 37px 0px 0px -25px;
+        padding-top: 27px;
+        height: 27px;
+    }
+
+    .nav_li_container{
+        position: relative;
+        float: right;
+        top: -1000px;
+        height: 600%;
+        background-color: darkred;
+        margin: 0px 0px 0px -15px;
+        transition: all 250ms;
+        z-index: 10;
+        width: 60%;
+        padding-top: 27px;
+    }
+
+    .responsive_li{
+        width: 100%;
+        padding: 9px 20px;
+    }
+
+    .responsive_li i {
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+        color: white;
+    }
+
+    .responsive_li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav_responsive_ul:hover > .nav_li_container{
+        top: -27px;
+    }
+
+    .Everything{
+        display: block;
+        border-radius: 0px;
+        margin: 15px 20px 0px 20px;
+    }
+    
+    .Center_Part{
+        border-radius: 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .nav_ul{
+        display: none;
+    }
+
+    .nav{
+        height: 37px;
+        width: 100%;
+    }
+
+    .nav_responsive_ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin: 37px 0px 0px -25px;
+        padding-top: 27px;
+        height: 27px;
+    }
+
+    .nav_li_container{
+        position: relative;
+        float: right;
+        top: -1000px;
+        height: 600%;
+        background-color: darkred;
+        margin: 0px 0px 0px -15px;
+        transition: all 250ms;
+        z-index: 10;
+        width: 60%;
+        padding-top: 27px;
+    }
+
+    .responsive_li{
+        width: 100%;
+        padding: 9px 20px;
+    }
+
+    .responsive_li i {
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+        color: white;
+    }
+
+    .responsive_li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav_responsive_ul:hover > .nav_li_container{
+        top: -27px;
+    }
+
+    .Everything{
+        display: block;
+        border-radius: 0px;
+        margin: 15px 20px 0px 20px;
+    }
+    
+    .Center_Part{
+        border-radius: 0px;
+    }
+}
